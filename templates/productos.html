@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+    <h1>Aqui estan los productos</h1>
+    <h2>Productos</h2>
+    <ul>
+        {% for i in produ %}
+        <li>{{i}}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %} 

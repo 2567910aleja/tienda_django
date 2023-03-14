@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def productos(request):
+    contex={"titulo":"productos","produ":["lapiz","cuaderno","borrador","calculadora"]}
+    return render(request,"productos.html",contex)
